@@ -8,5 +8,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+        <TextBlock Grid.Row="0" x:Name="CookiesText" Text="0 sušenek" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,15">
+            <TextBlock x:Name="PerClickText" Text="Za kliknutí: 1" FontSize="14" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="PerSecondText" Text="Produkce: 0 / s" FontSize="14" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" x:Name="CookieButton" Content="" FontSize="120" Background="Transparent" BorderThickness="0" Cursor="Hand" Click="CookieButton_Click"/>
+
     </Grid>
 </Window>
